@@ -9,7 +9,7 @@ from api.model_fetch import ensure_models
 
 
 MODEL_DIR = os.getenv("MODEL_DIR", "models")
-MODEL_BLOB_URL = os.getenv("MODEL_BLOB_URL", "https://stackoverflowtagger.blob.core.windows.net/models/model_artifacts.zip?sp=r&st=2025-12-21T14:07:32Z&se=2026-12-21T22:22:32Z&spr=https&sv=2024-11-04&sr=b&sig=67L%2BGnROKrn9KrqVz0FuBG3nsxo5buTVS3LgUIByt9o%3D")
+MODEL_BLOB_URL = os.getenv("MODEL_BLOB_URL", "https://tagmodel.blob.core.windows.net/modellight/model_artifacts.zip?sp=r&st=2025-12-23T15:02:47Z&se=2025-12-23T23:17:47Z&spr=https&sv=2024-11-04&sr=b&sig=hzUw4%2FDEt7V1vshTazi%2Bto3Usuc6qiXn9IOuNtJAvf4%3D")
 
 class PredictRequest(BaseModel):
     text: str = Field(..., min_length=1)

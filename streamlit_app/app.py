@@ -6,6 +6,7 @@ st.set_page_config(page_title="StackOverflow Tagger", layout="centered")
 
 API_URL = os.getenv("TAGGER_API_URL", "http://127.0.0.1:8000")
 
+
 st.title("StackOverflow Tags — Démo locale")
 
 # --- Entrées utilisateur ---
@@ -72,7 +73,7 @@ if st.button("Predict tags", type="primary"):
 # --- Health check ---
 with st.expander("API health check"):
     try:
-        r = requests.get(f"{API_URL}/health", timeout=10)
+        r = requests.get(f"{API_URL}/health", timeout=50)
         st.json(r.json())
     except Exception as e:
         st.error(f"API not reachable: {e}")

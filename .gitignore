@@ -28,3 +28,4 @@ htmlcov/
 # Model artifacts (IMPORTANT)
 models/
 mlruns/
+models1/
