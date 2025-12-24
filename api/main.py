@@ -9,7 +9,7 @@ from api.model_fetch import ensure_models
 
 
 MODEL_DIR = os.getenv("MODEL_DIR", "models")
-MODEL_BLOB_URL = os.getenv("MODEL_BLOB_URL", "https://tagmodel.blob.core.windows.net/modellight/model_artifacts.zip?sp=r&st=2025-12-23T15:02:47Z&se=2025-12-23T23:17:47Z&spr=https&sv=2024-11-04&sr=b&sig=hzUw4%2FDEt7V1vshTazi%2Bto3Usuc6qiXn9IOuNtJAvf4%3D")
+MODEL_BLOB_URL = os.getenv("MODEL_BLOB_URL", "https://tagmodel.blob.core.windows.net/modellight/model_artifacts.zip?sp=rw&st=2025-12-24T11:13:49Z&se=2026-01-09T19:28:49Z&spr=https&sv=2024-11-04&sr=b&sig=Y1DIEEL%2Blg88ujVpN3DiGHbpO1IQaIxeqcaxy%2FqfUWc%3D")
 
 class PredictRequest(BaseModel):
     text: str = Field(..., min_length=1)
