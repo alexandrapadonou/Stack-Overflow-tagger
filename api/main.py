@@ -16,6 +16,7 @@ class PredictRequest(BaseModel):
     topk: Optional[int] = Field(None, ge=1, le=50)
     threshold: Optional[float] = None
 
+
 class PredictResponse(BaseModel):
     tags: List[str]
 
