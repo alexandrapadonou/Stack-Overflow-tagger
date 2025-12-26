@@ -26,6 +26,7 @@ svc = InferenceService(MODEL_DIR)
 
 @app.on_event("startup")
 def startup():
+    health()
     ensure_models(MODEL_DIR, MODEL_BLOB_URL)
     svc.load()
 
